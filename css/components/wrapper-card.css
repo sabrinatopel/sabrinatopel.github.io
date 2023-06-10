@@ -1,5 +1,5 @@
-.wrapper-card{
-    display: flex;
+.wrapper-card {
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }

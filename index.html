@@ -22,8 +22,8 @@
         <a href="" class="nav-item download">Download CV</a>
       </nav>
     </header>
-    <section class="banner ">
-      <div class="wapper ">
+    <section class="banner">
+      <div class="wapper">
         <div class="box">
           <h1 class="main-title tracking-in-expand">Sabrina Topel</h1>
           <h2 id="subtitle" class="main-title">
@@ -36,55 +36,49 @@
       </div>
     </section>
 
-    
-    
-    
     <section id="skills" class="section">
       <h2 class="main-title -second">Skills</h2>
-      <div class="wrapper-card ">
-
+      <div class="wrapper-card">
         <figure class="card-project">
-          <div class="card-inner" >
+          <div class="card-inner">
             <div class="card-front">
               <img
                 class="logo-project -project"
                 src="./assets/img/skills/python.png" />
-                <h2 class="main-title -second">Python</h2>
-                
+              <h2 class="main-title -second">Python</h2>
             </div>
           </div>
         </figure>
-     
+
         <figure class="card-project">
-          <div class="card-inner" >
+          <div class="card-inner">
             <div class="card-front">
               <img
                 class="logo-project -project"
                 src="./assets/img/skills/spring-boot.png" />
-                <h2 class="main-title -second">Spring Boot</h2>
-                
+              <h2 class="main-title -second">Spring Boot</h2>
             </div>
           </div>
         </figure>
-    
+
         <figure class="card-project">
           <div class="card-inner">
             <div class="card-front">
               <img
                 class="logo-project -project"
                 src="./assets/img/skills/docker.png" />
-                <h2 class="main-title -second">Docker</h2>
+              <h2 class="main-title -second">Docker</h2>
             </div>
           </div>
         </figure>
-		
-		 <figure class="card-project">
+
+        <figure class="card-project">
           <div class="card-inner">
             <div class="card-front">
               <img
                 class="logo-project -project"
                 src="./assets/img/skills/react.png" />
-                <h2 class="main-title -second">React</h2>
+              <h2 class="main-title -second">React</h2>
             </div>
           </div>
         </figure>
@@ -105,7 +99,10 @@
               <div class="card-content">
                 <h3 class="project-title">Previ+</h3>
                 <p class="project-title -description">
-                  The retirement calculation system for PBprev. Simplify and streamline the retirement calculation process, ensuring accuracy and efficiency. Optimize benefits management for the institution and provide a quality service to beneficiaries.
+                  The retirement calculation system for PBprev. Simplify and
+                  streamline the retirement calculation process, ensuring
+                  accuracy and efficiency. Optimize benefits management for the
+                  institution and provide a quality service to beneficiaries.
                 </p>
               </div>
             </div>
@@ -123,13 +120,16 @@
               <div class="card-content">
                 <h3 class="project-title">SISCRH</h3>
                 <p class="project-title -description">
-                  The Human Resources system for PBprev. Simplify personnel management, starting from the hiring process. Automate tasks, improve efficiency, and have complete control over employee information, promoting agile and accurate HR management.
+                  The Human Resources system for PBprev. Simplify personnel
+                  management, starting from the hiring process. Automate tasks,
+                  improve efficiency, and have complete control over employee
+                  information, promoting agile and accurate HR management.
                 </p>
               </div>
             </div>
           </div>
         </figure>
-    
+
         <figure class="card-project flip-card">
           <div class="card-inner">
             <div class="card-front">
@@ -141,7 +141,10 @@
               <div class="card-content">
                 <h3 class="project-title">SISÓbito</h3>
                 <p class="project-title -description">
-                  The CPF verification system for PBprev. Streamline payroll management and prevent fraud. Integrate with the Dataprev API to check the status of beneficiaries' CPFs, identifying potential deaths.
+                  The CPF verification system for PBprev. Streamline payroll
+                  management and prevent fraud. Integrate with the Dataprev API
+                  to check the status of beneficiaries' CPFs, identifying
+                  potential deaths.
                 </p>
               </div>
             </div>
@@ -164,19 +167,19 @@
         });
       });
 
-      const navLinks = document.querySelectorAll('.nav-item');
+      const navLinks = document.querySelectorAll(".nav-item");
 
-      navLinks.forEach(navLink => {
-        navLink.addEventListener('click', (event) => {
+      navLinks.forEach((navLink) => {
+        navLink.addEventListener("click", (event) => {
           event.preventDefault(); // Prevenir comportamento padrão do clique
 
-          const targetId = navLink.getAttribute('href'); // Obter o ID do alvo
+          const targetId = navLink.getAttribute("href"); // Obter o ID do alvo
           const targetElement = document.querySelector(targetId); // Encontrar o elemento de destino
 
           // Rolar suavemente até o elemento de destino
           targetElement.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
+            behavior: "smooth",
+            block: "start",
           });
         });
       });

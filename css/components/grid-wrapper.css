@@ -1,5 +1,5 @@
 .grid-wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }

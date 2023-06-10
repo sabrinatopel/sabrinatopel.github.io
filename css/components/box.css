@@ -2,15 +2,34 @@
   display: inline-block;
   text-align: left;
   padding: 42px 44px;
-  width:400px;
-  margin-top: 50px; 
-  margin-left: 150px;
+  width: 400px;
+  margin-top: 50px;
   background-color: rgba(255, 255, 255, 0.708);
   border-radius: 5cm;
+
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  height: 130px;
+}
+
+.box .navigation {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box .navigation .nav-item {
+  color: #ac261d;
+}
+
+.box .navigation .nav-item:hover {
+  color: #fdad00;
 }
 
 .box,
 .title {
   margin-bottom: 30px;
 }
-

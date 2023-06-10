@@ -1,0 +1,69 @@
+/* Adicione seu CSS existente aqui */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: #511e9d;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #dbe0ff;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+    z-index: 9999;
+  }
+  
+  .menu.show {
+    transform: translateX(0%);
+  }
+  
+  .menu li {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  
+  .menu li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .menu li a {
+    font-size: 20px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .nav-bar {
+      position: relative;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .menu {
+      flex-direction: column;
+      padding: 50px 20px;
+    }
+  }
+  

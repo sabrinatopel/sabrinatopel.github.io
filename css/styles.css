@@ -1,18 +1,41 @@
-@import url('./reset.css');
-@import url('./components/main-title.css');
-@import url('./components/box.css');
+
 @import url('./components/banner.css');
-@import url('./components/header.css');
+@import url('./components/card-project.css');
+@import url('./components/box.css');
 @import url('./components/button.css');
+@import url('./components/header.css');
 @import url('./components/section.css');
 @import url('./components/skill-tec.css');
 @import url('./components/wrapper-skill.css');
-@import url('./components/card-project.css');
 @import url('./components/wrapper-card.css');
 @import url('./components/responsiv.css');
 @import url('./components/grid-wrapper.css');
-
+@import url('./reset.css');
+@import url('./components/main-title.css');
 html {
     scroll-behavior: smooth;
   }
 
+  .section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .skill-tec {
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .grid-wrapper {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  

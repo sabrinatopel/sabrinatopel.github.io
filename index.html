@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabrina Topel</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <span class="logo">ST</span>
+      <nav class="nav-bar">
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="" class="nav-item">About Me</a>
+        <a href="" class="nav-item">Contacts</a>
+        <a href="" class="nav-item download">Download CV</a>
+      </nav>
+    </header>
+    <section class="banner">
+      <div class="wapper">
+        <div class="box">
+          <h1 class="main-title">Sabrina Topel</h1>
+          <h2 id="subtitle" class="main-title">
+            Turning ideas into reality through code.
+          </h2>
+          <div class="navigation">
+            <a href="" class="nav-item download">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="section">
+      <h1 class="main-title -second">Skills</h1>
+      <div class="grid-wrapper">
+        <article class="skill-tec">
+          <img class="icon" src="./assets/img/skills/dev.png" />
+          <h3 class="title">React</h3>
+        </article>
+        <article class="skill-tec">
+          <img class="icon" src="./assets/img/skills/organizacao.png" />
+          <h3 class="title">Docker</h3>
+        </article>
+        <article class="skill-tec">
+          <img class="icon" src="./assets/img/skills/seguranca.png" />
+          <h3 class="title">Spring Boot</h3>
+        </article>
+        <article class="skill-tec">
+          <img class="icon" src="./assets/img/skills/velocidade.png" />
+          <h3 class="title">Python</h3>
+        </article>
+      </div>
+    </section>
+    
+    
+    <section id="projects" class="section -projects">
+      <h2 class="main-title -projects">Projects</h2>
+      <div class="wrapper-card">
+        <figure class="card-project flip-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img
+                class="logo-project"
+                src="./assets/img/projects/previmais.png" />
+            </div>
+            <div class="card-back">
+              <div class="card-content">
+                <h3 class="project-title">Previ+</h3>
+                <p class="project-title -description">
+                  O sistema de cálculo de aposentadoria para a PBprev.
+                  Simplifique e agilize o processo de cálculo de aposentadorias,
+                  garantindo precisão e eficiência. Otimize o gerenciamento de
+                  benefícios para a instituição e ofereça um serviço de
+                  qualidade aos beneficiários.
+                </p>
+              </div>
+            </div>
+          </div>
+        </figure>
+
+        <figure class="card-project flip-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img
+                class="logo-project"
+                src="./assets/img/projects/sisobito.png" />
+            </div>
+            <div class="card-back">
+              <div class="card-content">
+                <h3 class="project-title">SISCRH</h3>
+                <p class="project-title -description">
+                  O sistema de Recursos Humanos da PBprev. Simplifique a gestão
+                  de pessoal, desde o processo de admissão. Automatize tarefas,
+                  melhore a eficiência e tenha um controle completo sobre as
+                  informações dos colaboradores, promovendo uma gestão de RH
+                  ágil e precisa.
+                </p>
+              </div>
+            </div>
+          </div>
+        </figure>
+
+        <figure class="card-project flip-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img
+                class="logo-project"
+                src="./assets/img/projects/startup.png" />
+            </div>
+            <div class="card-back">
+              <div class="card-content">
+                <h3 class="project-title">SISÓbito</h3>
+                <p class="project-title -description">
+                  O sistema de verificação de CPFs da PBprev. Agilize a gestão
+                  da folha de pagamento e previna fraudes. Integre-se à API
+                  Dataprev para verificar o status dos CPFs dos beneficiários,
+                  identificando possíveis óbitos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+    <script>
+      const flipCards = document.querySelectorAll(".flip-card");
+      flipCards.forEach((flipCard) => {
+        let isFlipped = false;
+        flipCard.addEventListener("click", () => {
+          if (!isFlipped) {
+            flipCard.classList.add("flipped");
+            isFlipped = true;
+          } else {
+            flipCard.classList.remove("flipped");
+            isFlipped = false;
+          }
+        });
+      });
+
+      const navLinks = document.querySelectorAll('.nav-item');
+
+      navLinks.forEach(navLink => {
+        navLink.addEventListener('click', (event) => {
+          event.preventDefault(); // Prevenir comportamento padrão do clique
+
+          const targetId = navLink.getAttribute('href'); // Obter o ID do alvo
+          const targetElement = document.querySelector(targetId); // Encontrar o elemento de destino
+
+          // Rolar suavemente até o elemento de destino
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

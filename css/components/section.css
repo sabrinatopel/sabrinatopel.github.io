@@ -1,0 +1,15 @@
+.section{
+    background-color: #521C96;
+   
+  width: 100%;
+    padding: 40px 0;
+  box-sizing: border-box;
+}
+
+.section.-section{
+    background-color: #6923bd; 
+}
+
+.section.-projects{
+    background-color: #7289FF;
+}

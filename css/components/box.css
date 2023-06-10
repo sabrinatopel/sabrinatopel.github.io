@@ -1,0 +1,16 @@
+.box {
+  display: inline-block;
+  text-align: left;
+  padding: 42px 44px;
+  width:400px;
+  margin-top: 100px; 
+  margin-left: 150px;
+  background-color: rgba(255, 255, 255, 0.708);
+  border-radius: 5cm;
+}
+
+.box,
+.title {
+  margin-bottom: 30px;
+}
+

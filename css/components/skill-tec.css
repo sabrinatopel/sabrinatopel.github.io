@@ -1,0 +1,25 @@
+.skill-tec {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.skill-tec .title {
+  font-family: "Aoboshi One", serif;
+  color: #fdad00;
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.skill-tec .icon {
+  margin-right: 10px;
+ 
+}
+
+.skill-tec .paragraph {
+  margin-top: 0;
+  font-family: "Aoboshi One", serif;
+  color: #ffcd60;
+}

@@ -1,0 +1,28 @@
+.banner {
+  height: 640px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/banner/pc.jpg");
+  background-position: right;
+  margin-left: 90px;
+}
+
+.banner .wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+}
+.banner .box {
+  margin-bottom: 40px;
+}
+.banner .box {
+  width: 100%;
+  max-width: 400px; 
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.banner .navigation {
+  display: flex;
+  justify-content: space-between;
+}

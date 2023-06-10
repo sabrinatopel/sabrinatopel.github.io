@@ -1,0 +1,24 @@
+.main-title {
+  font-family: "Aoboshi One", serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #472061;
+  margin-bottom: 20px;
+}
+
+#subtitle {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.main-title.-second {
+  color: #fdad00;
+  text-align: center;
+}
+
+.main-title.-projects {
+  color: #3e3d89;
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 5px;
+}

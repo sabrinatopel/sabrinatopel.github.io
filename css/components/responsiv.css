@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+  .grid-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-project {
+    width: 100%;
+  }
+}

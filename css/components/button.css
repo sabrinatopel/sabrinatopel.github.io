@@ -1,0 +1,18 @@
+.download {
+  display: inline-block;
+  background-color: #FDAD00;
+  color: azure;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 0;
+  transition: transform 200ms linear;
+  border-radius: 5cm;
+}
+
+.download:hover {
+  background-color: #AC261D;
+  color: azure;
+  transform: scale(1.05);
+}

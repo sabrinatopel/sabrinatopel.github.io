@@ -15,7 +15,9 @@
 html {
     scroll-behavior: smooth;
   }
-
+  body {
+    overflow-x: hidden;
+  }
 header{
   display: flex;
   align-items: center;

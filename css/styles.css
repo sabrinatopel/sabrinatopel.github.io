@@ -25,6 +25,19 @@ header {
   align-items: center;
 }
 
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.kenburns-top {
+	-webkit-animation: kenburns-top 5s ease-out both;
+	        animation: kenburns-top 5s ease-out both;
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
 
 @keyframes pulse {
   0% {
@@ -37,22 +50,6 @@ header {
     transform: scale(1);
   }
 }
-
-.pulse-animation {
-  animation: pulse 2s infinite;
-}
-
-
-.tracking-in-expand {
-	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-}
-
-.kenburns-top {
-	-webkit-animation: kenburns-top 5s ease-out both;
-	        animation: kenburns-top 5s ease-out both;
-}
-
 
 @-webkit-keyframes tracking-in-expand {
   0% {

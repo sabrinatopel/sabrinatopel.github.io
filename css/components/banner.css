@@ -1,11 +1,13 @@
 .banner {
-  height: 640px;
-  background-size: contain;
-  background-repeat: no-repeat;
+ height: 640px;
   background-image: url("../../assets/img/banner/pc.jpg");
-  background-position: right;
-  margin-left: 90px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
+
+
 
 .banner .wrapper {
   display: flex;
@@ -18,8 +20,8 @@
 .banner .box {
   width: 100%;
   max-width: 400px; 
-  margin: 0 auto;
   margin-bottom: 40px;
+  margin-top: 150px;
 }
 
 .banner .navigation {

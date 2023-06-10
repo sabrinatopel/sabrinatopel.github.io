@@ -1,18 +1,12 @@
 header {
   background-color: #dbe0ff;
   padding: 10px 20px;
-  display: flex;
+  
+  
   justify-content: space-between;
-  align-items: center;
   height:60px;
-  display: flex;
+ 
 }
-
-header {
-  display: flex;
-  align-items: center;
-}
-
 
 .nav-bar {
   text-align: right;
@@ -31,7 +25,7 @@ header {
   margin-right: 0;
 }
 
-.nav-item {
+ .nav-item {
   color: #511e9d;
   font-size: 20px;
   font-family: "Aoboshi One", serif;
@@ -39,7 +33,14 @@ header {
   text-decoration: None;
   margin-right: 30px;
 }
+
 .nav-item:hover {
   color: #743d90;
 }
 
+.nav-bar .download{
+  color: #AC261D;
+}
+.nav-bar .download:hover{
+  color: #FDAD00;
+}

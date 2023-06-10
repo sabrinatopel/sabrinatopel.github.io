@@ -1,7 +1,7 @@
 .download {
   display: inline-block;
   background-color: #FDAD00;
-  color: azure;
+  color: #ac261d;
   height: 50px;
   line-height: 50px;
   padding-left: 20px;
@@ -12,7 +12,8 @@
 }
 
 .download:hover {
+  font-family: "Aoboshi One", serif;
   background-color: #AC261D;
-  color: azure;
+  color: #FDAD00;
   transform: scale(1.05);
 }

@@ -15,11 +15,11 @@
 html {
     scroll-behavior: smooth;
   }
-header {
+
+header{
   display: flex;
   align-items: center;
 }
-
 .nav-bar {
   display: flex;
   align-items: center;

@@ -26,6 +26,7 @@
           <li><a href="" class="nav-item">About Me</a></li>
           <li><a href="" class="nav-item">Contacts</a></li>
           <li><a href="" class="nav-item download">Download CV</a></li>
+          <li class="close-btn"><a href="" class="nav-item">&times;</a></li>
         </ul>
       </nav>
     </header>
@@ -190,13 +191,23 @@
         });
       });
 
-      const hamburger = document.querySelector('.hamburger');
-const menu = document.querySelector('.menu');
+      const hamburger = document.querySelector(".hamburger");
+      const menu = document.querySelector(".menu");
+      const menuItems = document.querySelectorAll(".menu li a");
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
 
-hamburger.addEventListener('click', () => {
-  menu.classList.toggle('show');
-});
+      const closeBtn = document.querySelector(".close-btn");
 
+      closeBtn.addEventListener("click", () => {
+        menu.classList.remove("show");
+      });
+      menuItems.forEach((menuItem) => {
+        menuItem.addEventListener("click", () => {
+          menu.classList.remove("show");
+        });
+      });
     </script>
   </body>
 </html>

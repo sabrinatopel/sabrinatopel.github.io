@@ -1,11 +1,8 @@
 .skill-tec {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 50px;
-
-   text-align: center;
-  flex-basis: 200px;
-  margin: 10px;
+    background-color: #DBE0FF; /* Cor de fundo */
+  padding: 20px; /* Espaçamento interno dentro do card */
+  border-radius: 8px; /* Arredonda as bordas do card */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .skill-tec .title {
@@ -19,7 +16,7 @@
 
 .skill-tec .icon {
   margin-right: 10px;
- 
+  width:150px;
 }
 
 .skill-tec .paragraph {

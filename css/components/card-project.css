@@ -14,6 +14,29 @@
   backface-visibility: hidden;
 }
 
+.card-project.-skill{
+  margin-top: 50px;
+}
+.card-project.-skill, .card-project.-skill .project-title{
+text-align: center;
+color: #FDAD00;
+
+}
+
+.card-project.-skill{
+  background-color: #521C96;
+
+}
+
+.article-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
 .flip-card {
   transform-style: preserve-3d;
   cursor: pointer;

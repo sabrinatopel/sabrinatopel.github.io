@@ -1,5 +1,13 @@
 .grid-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  justify-items: center; 
+}
+
+@media screen and (max-width: 600px) {
+ .grid-wrapper {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0; 
+  }
 }

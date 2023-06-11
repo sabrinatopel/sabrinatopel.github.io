@@ -15,10 +15,34 @@
 
 .section.-about-me {
   background-color: #BE1A18;
-  background-image: url("../../assets/img/about-me/about-me.png"); 
-  background-position: left;
-  background-repeat: no-repeat;
-  height: 455px;
+  height: 605px;
   
 }
 
+.section.-about-me img{
+  max-width: 46%; 
+  margin-top: -120px;
+  margin-left: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .section.section.-about-me img{
+    min-width: 90%; 
+    margin-top: -85px;
+    margin-left: -10px;
+  }
+
+  .section.-about-me {
+    background-color: #BE1A18;
+    height: 855px;
+    
+  }
+
+  .about-me-text {
+    margin-left: -20px;
+    margin-top:-2px;
+    width: 80%;
+  }
+  
+}

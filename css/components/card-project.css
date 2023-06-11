@@ -108,3 +108,11 @@ margin-top: 50px;
 .project-title.-description {
   font-size: 17px;
 }
+
+.project-title.-about-me {
+  font-size: 17px;
+  color: #fd1100;
+  width: 50%;
+  margin: auto;
+  background-color: #fdad00;
+}

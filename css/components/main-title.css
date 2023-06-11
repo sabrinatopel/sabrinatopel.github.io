@@ -11,8 +11,15 @@
   font-weight: 100;
 }
 
-.main-title.-second {
+.main-title.-about-me{
   color: #fdad00;
+  text-align: center;
+  text-shadow: 2px 0 #ac261d, -2px 0 #ac261d, 0 2px #ac261d, 0 -2px #ac261d,
+  1px 1px #ac261d, -1px -1px #ac261d, 1px -1px #ac261d, -1px 1px #ac261d;
+}
+
+.main-title.-skills {
+  color: #70A5FF;
   text-align: center;
 }
 
@@ -22,3 +29,4 @@
   margin-bottom: 60px;
   padding: 5px;
 }
+
